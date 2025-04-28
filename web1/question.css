@@ -1,0 +1,325 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+   font-family: 'Arial', Helvetica, sans-serif;
+   background-color: #e0f7fa;
+   color: #003366;
+}
+
+header {
+   display: block;
+   background-color: #005b96;
+   padding: 20px;
+   border-bottom: 5px solid #003366;
+}
+
+h1 {
+   font-weight: normal;
+   padding: 1.5em;
+   color: white;
+   text-shadow: 1px 1px 0px #003366;
+   width: 1000px;
+   margin: auto;
+}
+
+nav {
+   background-color: #003366;
+}
+
+nav a {
+   color: white;
+   text-decoration: none;
+}
+
+nav a:hover {
+   color: #66b2ff;
+}
+
+nav ul {
+   display: table;
+   width: 1000px;
+   margin: auto;
+}
+
+nav li {
+   display: table-cell;
+   text-align: center;
+   padding: 1em;
+}
+
+main {
+   overflow: auto;
+   min-height: 30vh;
+   background-color: #e0f7fa;
+   width: 1000px;
+   margin: auto;
+   box-shadow: -1000px 0 0 #e0f7fa, 1000px 0 0 #e0f7fa;
+   padding-top: 20px;
+}
+
+footer {
+   padding: 1em;
+   background-color: #003366;
+   color: white;
+   font-size: 0.8em;
+   text-align: center;
+}
+
+p {
+   margin-bottom: 1em;
+}
+
+input, label, select, textarea {
+   float: left;
+   width: 15em;
+   margin-bottom: 1em;
+   padding: 0.5em;
+   border: 1px solid #003366;
+   border-radius: 5px;
+}
+
+label {
+   clear: left;
+   padding: 0;
+   margin: 0;
+}
+
+input[type="submit"] {
+   margin-left: 15em;
+   width: auto;
+   padding: 0.5em 1em;
+   clear: both;
+   font-size: 1em;
+   background-color: #005b96;
+   color: white;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+}
+
+input[type="submit"]:hover {
+   background-color: #003366;
+}
+
+form {
+   overflow: auto;
+   clear: both;
+   display: block;
+}
+
+blockquote {
+   display: table;
+   margin-bottom: 1em;
+   border-bottom: 1px solid #003366;
+   padding: 0.5em;
+   background-color: #b3e0ff;
+   border-radius: 5px;
+}
+
+blockquote p {
+   display: table-cell;
+   width: 70%;
+   vertical-align: top;
+}
+
+blockquote form {
+   display: table-cell;
+   width: 10%;
+}
+
+.errors {
+   padding: 1em;
+   border: 1px solid red;
+   background-color: lightyellow;
+   color: red;
+   margin-bottom: 1em;
+   overflow: auto;
+}
+
+.errors ul {
+   margin-left: 1em;
+}
+
+form p {
+   clear: both;
+}
+
+input[type="checkbox"] {
+   float: left;
+   clear: left;
+   width: auto;
+   margin-right: 10px;
+}
+
+input[type="checkbox"] + label {
+   clear: right;
+}
+
+.jokelist {
+   display: table;
+}
+
+.categories {
+   display: table-cell;
+   width: 20%;
+   background-color: #003366;
+   padding: 1em;
+   list-style-type: none;
+}
+
+.categories a {
+   color: white;
+   text-decoration: none;
+}
+
+.categories li {
+   margin-bottom: 1em;
+}
+
+.jokelist .jokes {
+   display: table-cell;
+   padding: 1em;
+}
+
+.currentpage:before {
+   content: "[";
+}
+
+.currentpage:after {
+   content: "]";
+}
+
+/* ========== Table Style ========== */
+table {
+   width: 100%;
+   border-collapse: collapse;
+   margin-bottom: 2em;
+}
+
+th, td {
+   vertical-align: middle;
+   text-align: center;
+   padding: 10px;
+   border: 1px solid #003366;
+}
+
+th {
+   background-color: #005b96;
+   color: white;
+   font-weight: bold;
+   font-size: 1em;
+}
+
+td input[type="text"] {
+   height: 30px;
+   width: 80%;
+   padding: 5px;
+   font-size: 0.9em;
+   border: 1px solid #003366;
+   border-radius: 5px;
+}
+
+td button {
+   height: 32px;
+   padding: 0 12px;
+   font-size: 0.9em;
+   background-color: #005b96;
+   color: white;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+}
+
+td button:hover {
+   background-color: #003366;
+}
+
+/* Add Module form input and button */
+.add-form input[type="text"] {
+   height: 32px;
+   padding: 5px;
+   font-size: 0.9em;
+   border: 1px solid #003366;
+   border-radius: 5px;
+}
+
+.add-form button {
+   height: 34px;
+   padding: 0 12px;
+   font-size: 0.9em;
+   background-color: #005b96;
+   color: white;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+   margin-left: 5px;
+}
+
+.add-form button:hover {
+   background-color: #003366;
+}
+
+/* Form input bên trong bảng chỉnh cho đẹp */
+td form {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 8px;
+}
+
+/* Các input trong table */
+td form input[type="text"] {
+   width: 90%;
+   height: 30px;
+   padding: 5px;
+   font-size: 0.9em;
+   border: 1px solid #003366;
+   border-radius: 5px;
+}
+
+/* Nút Save và Delete trong bảng */
+td form button, 
+td.actions form button {
+   height: 32px;
+   padding: 0 12px;
+   font-size: 0.9em;
+   background-color: #005b96;
+   color: white;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+}
+
+td form button:hover, 
+td.actions form button:hover {
+   background-color: #003366;
+}
+
+/* Add new user input line */
+.add-form input[type="text"] {
+   height: 32px;
+   padding: 5px;
+   font-size: 0.9em;
+   border: 1px solid #003366;
+   border-radius: 5px;
+}
+
+.add-form button {
+   height: 34px;
+   padding: 0 12px;
+   font-size: 0.9em;
+   background-color: #005b96;
+   color: white;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+   margin-left: 5px;
+}
+
+.add-form button:hover {
+   background-color: #003366;
+}
